@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_090ddc0b57a34f2f992168bb3f926373 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_090ddc0b57a34f2f992168bb3f926373" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_090ddc0b57a34f2f992168bb3f926373 = L.map(
+                                  'map_090ddc0b57a34f2f992168bb3f926373',
+                                  {center: [19.4326296,-99.1331785],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_b77c916830d549faab149b1b298b7100 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+        
+    
+
+            var marker_158cfef6eb2544f19f413e81c23ab1e9 = L.marker(
+                [19.37187335,-99.26118151812653],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+
+                var icon_870d4c91fd4a454c9b3326365ce9ab7a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_158cfef6eb2544f19f413e81c23ab1e9.setIcon(icon_870d4c91fd4a454c9b3326365ce9ab7a);
+            
+    
+            var popup_4097a8eb564a4ae09870328e3bac6375 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6fe56285f374f89b6735d900a9b890a = $('<div id="html_e6fe56285f374f89b6735d900a9b890a" style="width: 100.0%; height: 100.0%;">Office</div>')[0];
+                popup_4097a8eb564a4ae09870328e3bac6375.setContent(html_e6fe56285f374f89b6735d900a9b890a);
+            
+
+            marker_158cfef6eb2544f19f413e81c23ab1e9.bindPopup(popup_4097a8eb564a4ae09870328e3bac6375);
+
+            
+        
+    
+
+            var circle_3719d32d70544c2292ae80c28712a15d = L.circle(
+                [19.37,-99.18],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 590.2333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_78de040a51ee4f9ba7057fd9109bcebb = L.popup({maxWidth: '300'});
+
+            
+                var html_f879343a75a4404aa940169c7a3bf0c7 = $('<div id="html_f879343a75a4404aa940169c7a3bf0c7" style="width: 100.0%; height: 100.0%;">ACTIPAN Rent: $17707, Distance to Office: Km 8.3</div>')[0];
+                popup_78de040a51ee4f9ba7057fd9109bcebb.setContent(html_f879343a75a4404aa940169c7a3bf0c7);
+            
+
+            circle_3719d32d70544c2292ae80c28712a15d.bindPopup(popup_78de040a51ee4f9ba7057fd9109bcebb);
+
+            
+        
+    
+
+            var circle_61edb4c40fa746c6952e9fbf174dab83 = L.circle(
+                [19.35,-99.16],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 534.1,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_02db7895f4794c198403e54fec05dc70 = L.popup({maxWidth: '300'});
+
+            
+                var html_d59232cc018940f3a9ae7cc140e73dd6 = $('<div id="html_d59232cc018940f3a9ae7cc140e73dd6" style="width: 100.0%; height: 100.0%;">VILLA COYOACAN Rent: $16023, Distance to Office: Km 10.11</div>')[0];
+                popup_02db7895f4794c198403e54fec05dc70.setContent(html_d59232cc018940f3a9ae7cc140e73dd6);
+            
+
+            circle_61edb4c40fa746c6952e9fbf174dab83.bindPopup(popup_02db7895f4794c198403e54fec05dc70);
+
+            
+        
+    
+
+            var circle_28ea023f09e048339c74f2ebce5e49a7 = L.circle(
+                [19.44,-99.18],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 590.2333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_d43ac917e70f48419916b298d664200b = L.popup({maxWidth: '300'});
+
+            
+                var html_dd0378674b6c4f61b4d05d8b8273a8c6 = $('<div id="html_dd0378674b6c4f61b4d05d8b8273a8c6" style="width: 100.0%; height: 100.0%;">ANAHUAC II Rent: $17707, Distance to Office: Km 10.87</div>')[0];
+                popup_d43ac917e70f48419916b298d664200b.setContent(html_dd0378674b6c4f61b4d05d8b8273a8c6);
+            
+
+            circle_28ea023f09e048339c74f2ebce5e49a7.bindPopup(popup_d43ac917e70f48419916b298d664200b);
+
+            
+        
+    
+
+            var circle_48a5ea75055843a59a8cf05c672206c8 = L.circle(
+                [19.43,-99.15],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 403.3333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_0bc55a1ea980425ba3b30873ee59f868 = L.popup({maxWidth: '300'});
+
+            
+                var html_daf1969406c547e8a6167bdf1b2a1e0b = $('<div id="html_daf1969406c547e8a6167bdf1b2a1e0b" style="width: 100.0%; height: 100.0%;">CENTRO VIII Rent: $12100, Distance to Office: Km 12.94</div>')[0];
+                popup_0bc55a1ea980425ba3b30873ee59f868.setContent(html_daf1969406c547e8a6167bdf1b2a1e0b);
+            
+
+            circle_48a5ea75055843a59a8cf05c672206c8.bindPopup(popup_0bc55a1ea980425ba3b30873ee59f868);
+
+            
+        
+    
+
+            var circle_cbf7364b9b674261a5515c5ecb529107 = L.circle(
+                [19.39,-99.16],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 536.2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_b078beebbbd044089894dedbf475b50a = L.popup({maxWidth: '300'});
+
+            
+                var html_2c440b4e5b7e4e389b76e67b4b668d2a = $('<div id="html_2c440b4e5b7e4e389b76e67b4b668d2a" style="width: 100.0%; height: 100.0%;">NARVARTE V Rent: $16086, Distance to Office: Km 10.5</div>')[0];
+                popup_b078beebbbd044089894dedbf475b50a.setContent(html_2c440b4e5b7e4e389b76e67b4b668d2a);
+            
+
+            circle_cbf7364b9b674261a5515c5ecb529107.bindPopup(popup_b078beebbbd044089894dedbf475b50a);
+
+            
+        
+    
+
+            var circle_7361030f60c24a22aa44f4c9f553551d = L.circle(
+                [19.4,-99.15],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 536.2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_c1fc8be58e044f54ab5b3f0a336395b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_15d1bb8f43b045849c2f00aaa849d2ac = $('<div id="html_15d1bb8f43b045849c2f00aaa849d2ac" style="width: 100.0%; height: 100.0%;">NARVARTE II Rent: $16086, Distance to Office: Km 11.1</div>')[0];
+                popup_c1fc8be58e044f54ab5b3f0a336395b5.setContent(html_15d1bb8f43b045849c2f00aaa849d2ac);
+            
+
+            circle_7361030f60c24a22aa44f4c9f553551d.bindPopup(popup_c1fc8be58e044f54ab5b3f0a336395b5);
+
+            
+        
+    
+
+            var circle_35538f3402c4453fb673145fc22ebefc = L.circle(
+                [19.35,-99.17],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 541.0666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_db96bd9dd19246ccbb45215e120e9e49 = L.popup({maxWidth: '300'});
+
+            
+                var html_1267eb0fadeb471ab2e1fd5429ff686f = $('<div id="html_1267eb0fadeb471ab2e1fd5429ff686f" style="width: 100.0%; height: 100.0%;">SANTA CATARINA BARR Rent: $16232, Distance to Office: Km 9.07</div>')[0];
+                popup_db96bd9dd19246ccbb45215e120e9e49.setContent(html_1267eb0fadeb471ab2e1fd5429ff686f);
+            
+
+            circle_35538f3402c4453fb673145fc22ebefc.bindPopup(popup_db96bd9dd19246ccbb45215e120e9e49);
+
+            
+        
+    
+
+            var circle_b77f79613b87446cb605dd064faf01a5 = L.circle(
+                [19.4,-99.16],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 508.26666666666665,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_ef20400d85bc4ce1ae5c999ac9803fa1 = L.popup({maxWidth: '300'});
+
+            
+                var html_c2f13280e0634f3c84e87d5d5c3f460f = $('<div id="html_c2f13280e0634f3c84e87d5d5c3f460f" style="width: 100.0%; height: 100.0%;">PIEDAD NARVARTE Rent: $15248, Distance to Office: Km 10.94</div>')[0];
+                popup_ef20400d85bc4ce1ae5c999ac9803fa1.setContent(html_c2f13280e0634f3c84e87d5d5c3f460f);
+            
+
+            circle_b77f79613b87446cb605dd064faf01a5.bindPopup(popup_ef20400d85bc4ce1ae5c999ac9803fa1);
+
+            
+        
+    
+
+            var circle_6914993b287045359f68fb6a4e30271b = L.circle(
+                [19.37,-99.19],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 526.7333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_d53cc9ec678242b480db21e4f4815aa6 = L.popup({maxWidth: '300'});
+
+            
+                var html_2e9a69e698b14c9ab4d14e60abd51c55 = $('<div id="html_2e9a69e698b14c9ab4d14e60abd51c55" style="width: 100.0%; height: 100.0%;">MERCED GOMEZ Rent: $15802, Distance to Office: Km 7.15</div>')[0];
+                popup_d53cc9ec678242b480db21e4f4815aa6.setContent(html_2e9a69e698b14c9ab4d14e60abd51c55);
+            
+
+            circle_6914993b287045359f68fb6a4e30271b.bindPopup(popup_d53cc9ec678242b480db21e4f4815aa6);
+
+            
+        
+    
+
+            var circle_10034d952f5c42dfb021486971b61bf3 = L.circle(
+                [19.34,-99.18],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 426.3,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_090ddc0b57a34f2f992168bb3f926373);
+            
+    
+            var popup_4b778a0dff00432da570c7926c9b16aa = L.popup({maxWidth: '300'});
+
+            
+                var html_dea1ff395f194e61ace04b99484f1010 = $('<div id="html_dea1ff395f194e61ace04b99484f1010" style="width: 100.0%; height: 100.0%;">INTEGRACION LATINOAMERICANA U HAB Rent: $12789, Distance to Office: Km 8.85</div>')[0];
+                popup_4b778a0dff00432da570c7926c9b16aa.setContent(html_dea1ff395f194e61ace04b99484f1010);
+            
+
+            circle_10034d952f5c42dfb021486971b61bf3.bindPopup(popup_4b778a0dff00432da570c7926c9b16aa);
+
+            
+        
+</script>
